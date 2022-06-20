@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid d-flex justify-content-center px-5">
+            <div class="row alto align-items-center">
+                <div class="d-none d-sm-block col-md-12">
+                    <img class="img-fluid" src="up.svg" alt="Imagen Contacto" width="1000px" height="auto" />
+                </div>
+            </div>
+            <div class="row alto align-items-center justify-content-center">
+                <div class="col-12">
+                    <form id="formulario" class="row g-3 needs-validation" novalidate>
+                        <h1>Productos</h1>
+                        <div class="col-12 col-md-12">
+                            <label id="nombreProducto" for="validationCustom01" class="form-label">Nombre</label>
+                            <input type="textarea" class="form-control" id="validationCustom01" required />
+                            <div class="valid-feedback">Se ve bien</div>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <label id="urlProducto" for="validationCustom02" class="form-label">URL imagen</label>
+                            <input type="text" class="form-control" id="validationCustom02" required />
+                            <div class="valid-feedback">Se ve bien</div>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <label id="descripcionProducto" for="validationCustom03"
+                                class="form-label">Descripción</label>
+                            <input type="textarea" class="form-control" id="validationCustom03" required />
+                            <div class="valid-feedback">Se ve bien</div>
+                        </div>
+                        <div class="d-grid gap-2 mt-5">
+                            <button id="btnEnviar" class="btn btn-primary" type="submit">
+                                Cargar
+                            </button>
+                            <button id="btnCargando" class="btn btn-secondary d-none" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Subiendo producto ...
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ALIGN TOAST -->
+    <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex bg-primary text-white">
+          <div class="toast-body">
+            ✔ Producto subido con éxito.
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    <!-- TOAST END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>

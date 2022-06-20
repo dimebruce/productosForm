@@ -1,0 +1,11 @@
+
+.alto{
+    height: 650px;
+    margin: auto;
+  }
+
+  .toast {
+    position: absolute;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
